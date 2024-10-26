@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "2c59a05b-2532-439c-8796-f6a5c0367cbc",
+		"name": "Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6961208"
+	},
+	"item": [
+		{
+			"name": "Salvar User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/paulo/Downloads/desafio tecnico-luizalabs/desafio tecnico/data_3.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/users/?file=data_1.txt&fileType=txt",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					],
+					"query": [
+						{
+							"key": "file",
+							"value": "data_1.txt"
+						},
+						{
+							"key": "fileType",
+							"value": "txt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/paulo/Downloads/desafio tecnico-luizalabs/desafio tecnico/data_3.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/users/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders by date range",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/paulo/Downloads/desafio tecnico-luizalabs/desafio tecnico/data_3.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/orders/date-range?startDate=2020-01-01&endDate=2023-12-31",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"date-range"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2020-01-01"
+						},
+						{
+							"key": "endDate",
+							"value": "2023-12-31"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Orders by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/home/paulo/Downloads/desafio tecnico-luizalabs/desafio tecnico/data_3.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/orders/69",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"orders",
+						"69"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
